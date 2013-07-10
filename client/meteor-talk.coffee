@@ -50,4 +50,15 @@ Template.content.events
     e.preventDefault()
     slide = Slides.findOne()
     if slide
-      Slides.update(slide._id, {slideId: 1})
+      Slides.update(slide._id, {slideId: 0})
+
+Template.slide20.helpers
+ suggestions: ->
+   Suggestions.find()
+
+Template.slide20.events
+  'keypress input#suggestion-text': (e) ->
+    if e.which == 13
+      text = e.target.value
+      Suggestions.insert({text: text})
+      $(e.target).val('')

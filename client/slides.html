@@ -1,30 +1,38 @@
-<template name="slide-1">
+<template name="slide0">
+  <h2>Josh Owens</h2>
+  <ul>
+    <li>@joshowens</li>
+    <li>github.com/queso</li>
+  </ul>
+</template>
+
+<template name="slide1">
   <h2>What?</h2>
 </template>
 
-<template name="slide-2">
+<template name="slide2">
   <h2>What?</h2>
   <p>A full stack framework built on top of node.js and mongoDB.</p>
 </template>
 
-<template name="slide-3">
+<template name="slide3">
   <h2>What?</h2>
   <p>A <strong class="pink">reactive?!?</strong> full stack framework built on top of node.js and mongoDB.</p>
 </template>
 
-<template name="slide-4">
+<template name="slide4">
   <h2>What?</h2>
   <p>A reactive full stack framework built on top of <strong>synchronous</strong> node.js and mongoDB.</p>
 </template>
 
-<template name="slide-5">
+<template name="slide5">
   <h2>The 9 tenents</h2>
   <ul>
     <li><strong>Pure Javascript</strong></li>
   </ul>
 </template>
 
-<template name="slide-6">
+<template name="slide6">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -32,7 +40,7 @@
   </ul>
 </template>
 
-<template name="slide-7">
+<template name="slide7">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -41,7 +49,7 @@
   </ul>
 </template>
 
-<template name="slide-8">
+<template name="slide8">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -51,7 +59,7 @@
   </ul>
 </template>
 
-<template name="slide-9">
+<template name="slide9">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -62,7 +70,7 @@
   </ul>
 </template>
 
-<template name="slide-10">
+<template name="slide10">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -74,7 +82,7 @@
   </ul>
 </template>
 
-<template name="slide-11">
+<template name="slide11">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -87,7 +95,7 @@
   </ul>
 </template>
 
-<template name="slide-12">
+<template name="slide12">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -101,7 +109,7 @@
   </ul>
 </template>
 
-<template name="slide-13">
+<template name="slide13">
   <h2>The 9 tenents</h2>
   <ul>
     <li>Pure Javascript</li>
@@ -116,22 +124,22 @@
   </ul>
 </template>
 
-<template name="slide-14">
+<template name="slide14">
   <h2>Why?</h2>
 </template>
 
-<template name="slide-15">
+<template name="slide15">
   <h2>Why not?</h2>
 </template>
 
-<template name="slide-16">
+<template name="slide16">
   <h2>Why?</h2>
   <ul>
     <li><strong>It's a fully interactive world</strong></li>
   </ul>
 </template>
 
-<template name="slide-17">
+<template name="slide17">
   <h2>Why?</h2>
   <ul>
     <li>It's a fully interactive world</li>
@@ -139,7 +147,7 @@
   </ul>
 </template>
 
-<template name="slide-18">
+<template name="slide18">
   <h2>Why?</h2>
   <ul>
     <li>It's a fully interactive world</li>
@@ -148,7 +156,7 @@
   </ul>
 </template>
 
-<template name="slide-19">
+<template name="slide19">
   <h2>Why?</h2>
   <ul>
     <li>It's a fully interactive world</li>
@@ -158,11 +166,28 @@
   </ul>
 </template>
 
-<template name="slide-20">
+<template name="slide20">
+  <h2>Why?</h2>
+  <ul>
+    <li>It's a fully interactive world</li>
+    <li>Rapid Prototyping</li>
+    <li>Look at all the things I'm not doing</li>
+    <li>It's just JS?!?</li>
+    {{#each suggestions}}
+    <li>{{text}}
+    {{/each}}
+    <div class="suggestion">
+      <p>Add your own</p>
+      <input type="text" id="suggestion-text" />
+    </div>
+  </ul>
+</template>
+
+<template name="slide21">
   <h2>How?</h2>
 </template>
 
-<template name="slide-21">
+<template name="slide22">
   <h2>How?</h2>
   <p>Install Meteor</p>
   <pre>
@@ -170,7 +195,7 @@
   </pre>
 </template>
 
-<template name="slide-22">
+<template name="slide23">
   <h2>How?</h2>
   <p>Create an app</p>
   <pre>
@@ -178,7 +203,7 @@
   </pre>
 </template>
 
-<template name="slide-23">
+<template name="slide24">
   <h2>How?</h2>
   <p>Run your app</p>
   <pre>
@@ -188,7 +213,7 @@
   </pre>
 </template>
 
-<template name="slide-24">
+<template name="slide25">
   <h2>How?</h2>
   <p>Deploy your app</p>
   <pre>
@@ -196,7 +221,7 @@
   </pre>
 </template>
 
-<template name="slide-25">
+<template name="slide26">
   <h2>How?</h2>
   <p>Smart Packages</p>
   <pre>
@@ -204,7 +229,7 @@
   </pre>
 </template>
 
-<template name="slide-26">
+<template name="slide27">
   <h2>How?</h2>
   <p><strong>3rd party</strong> Smart Packages</p>
   <pre>
@@ -213,6 +238,6 @@
   </pre>
 </template>
 
-<template name="slide-27">
+<template name="slide28">
   <h2>Demo</h2>
 </template>

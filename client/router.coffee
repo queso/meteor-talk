@@ -1,6 +1,6 @@
 Meteor.Router.add
   '/': ->
-    Session.set('currentSlideId', 1)
-    "slide-1"
+    Session.set('currentSlideId', 0)
+    "slide0"
   '/slides/:id': (id) ->
-    "slide-#{id}"
+    "slide#{id}"
