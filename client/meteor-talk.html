@@ -1,0 +1,50 @@
+<head>
+  <title>Meteor.js - What, why, and how.</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <nav class="top-bar cream">
+    {{> nav}}
+  </nav>
+  {{> content}}
+</body>
+
+<template name="content">
+  <div class="slide row cream">
+    <div class="small-8 small-centered columns">
+      {{#if showPresenterInterface}}
+        <div class="right presenter-nav">
+          <a href="/slides/{{prevPage}}" class="prev-slide">Previous</a>
+          --
+          <a href="/slides/{{nextPage}}" class="next-slide">Next</a>
+          --
+          <a class="reset-slides" href="#">Reset</a>
+        </div>
+      {{/if}}
+      {{renderPage}}
+    </div>
+  </div>
+</template>
+
+<template name="nav">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Meteor.js - What, why, and how.</a></h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li>
+        {{#if showPresenterInterface}}
+          <a class="hide-presenter" href="#">Hide Presenter UI</a>
+        {{else}}
+          <a class="show-presenter" href="#">Show Presenter UI</a>
+        {{/if}}
+      </li>
+    </ul>
+  </section>
+</template>
+
+<template name="presenterUI">
+</template>

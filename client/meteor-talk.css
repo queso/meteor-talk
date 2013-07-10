@@ -1,0 +1,74 @@
+/* CSS declarations go here */
+
+/* ===== COLORS ===== */
+body, html {
+  background-color: #402B2B;
+  font-family: 'Roboto Slab', serif;
+}
+
+.pink, strong {
+  color: #FF5286;
+}
+
+.cream {
+  color: #FFF6D9;
+}
+
+a, .blue {
+  color: #08888C;
+}
+
+.top-bar, .top-bar .top-bar-section li a, .top-bar .top-bar-section li a:hover, .dark-brown {
+  background-color: #B89E88;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #B89E88;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ===== LAYOUTS ===== */
+h2 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.top-bar {
+  margin-top: -35px;
+  transition: margin-top 1s;
+  -webkit-transition: margin-top 1s;
+}
+
+.top-bar:hover {
+  margin-top: 0px;
+}
+
+.slide li {
+  margin-left: 20px;
+  font-size: 1.3em;
+  list-style-type: square;
+}
+
+.presenter-nav {
+  opacity: 0.3;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+.presenter-nav:hover {
+  opacity: 0.9;
+}
+
+pre {
+  background-color: black;
+  padding: 7px 20px;
+  color: white;
+}
+
+pre p {
+  padding: 0px;
+  margin: 0px;
+}
